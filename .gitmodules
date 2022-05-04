@@ -1,0 +1,8 @@
+[submodule "rkbin"]
+	path = rkbin
+	url = https://github.com/JeffyCN/rockchip_mirrors.git
+	branch = rkbin
+[submodule "u-boot-rockchip"]
+	path = u-boot-rockchip
+	url = git@github.com:JoshuaMulliken/u-boot-rockchip.git
+	branch = quartz64
