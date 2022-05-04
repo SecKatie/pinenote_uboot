@@ -3,7 +3,7 @@
 pushd u-boot-rockchip
 
 export CROSS_COMPILE=aarch64-linux-gnu-
-make clean && make rk3566-quartz64_defconfig && \
+make clean && make rk3566-eink_defconfig && \
     ./make.sh && ./make.sh trust
 if [ $? -eq 0 ]; then
     popd

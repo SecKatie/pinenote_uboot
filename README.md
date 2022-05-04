@@ -29,11 +29,11 @@ $ ./build.sh
 
 2. Write the U-Boot bootloader to the uboot partition:
     
-    `rkdeveloptool write-partition uboot IMAGE/uboot.img`
+    `rkdeveloptool write-partition uboot IMAGES/uboot.img`
 
 3. Write the trust.img to the trust partition:
     
-    `rkdeveloptool write-partition trust IMAGE/trust.img`
+    `rkdeveloptool write-partition trust IMAGES/trust.img`
 
 4. Reboot the Pine64 PineNote:
     
