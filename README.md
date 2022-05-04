@@ -8,30 +8,11 @@ This bootloader includes fixes for the following issues:
 
 ## Requirements
 
-### Ubuntu 18.04 LTS or newer.
-
-```bash
-$ sudo apt-get install git-core gnupg flex bison \
-       build-essential zip curl zlib1g-dev gcc-multilib \
-       g++-multilib libc6-dev-i386 libncurses5 \
-       lib32ncurses5-dev x11proto-core-dev libx11-dev \ 
-       lib32z1-dev libgl1-mesa-dev libxml2-utils \
-       xsltproc unzip fontconfig
-```
-
 ### Fedora 35
 
 ```bash
-$ dnf install @development-tools android-tools \
-	          automake bison bzip2 bzip2-libs \
-              ccache curl dpkg-dev gcc gcc-c++ \
-	          gperf libstdc++.i686 libxml2-devel \
-	          lz4-libs lzop make maven \
-              ncurses-compat-libs openssl-devel \
-              openssl pngcrush python python3 \
-              python3-mako python-mako python-networkx \
-              schedtool squashfs-tools syslinux-devel \
-              zip zlib-devel zlib-devel.i686
+$ dnf install -y gcc-aarch64-linux-gnu
+$ python -m pip install pyelftools
 ```
 
 ## Build
