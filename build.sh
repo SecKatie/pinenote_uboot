@@ -3,10 +3,10 @@
 pushd u-boot-rockchip
 
 export CROSS_COMPILE=aarch64-linux-gnu-
-make clean && make rk3566-eink_defconfig && \
+make clean && make mrproper && make rk3566-eink_defconfig && \
     ./make.sh && ./make.sh trust
 if [ $? -eq 0 ]; then
-    popd
+    popd 
     mkdir -p IMAGES
     cp u-boot-rockchip/uboot.img IMAGES/
     cp u-boot-rockchip/trust.img IMAGES/
